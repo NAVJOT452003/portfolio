@@ -104,33 +104,24 @@ ul li a:hover{
 }
 .info a{
     text-decoration: none;
-    color: white;
-    background: black;
+    color: black;
+    background: #e40707;
     margin: 1.5rem 0;
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 0.5rem 0.5rem;
     border-radius: 1rem;
     display: inline-block;
     font-weight: bold;
-    
+    width: 4rem;
+    height: 1.7rem;
+    text-align: center;
+    font-size: 14px;
 } 
-.info b{
-    text-decoration: none;
-    color: white;
-    background: red;
-    margin: 1.625rem 3.125rem;
-    padding: 0.7rem 1.2rem;
-    border-radius: 1rem;
-    display: inline-block;
-    font-weight: bold;
-}
+
 .info a:hover{
     background: rgb(255, 0, 119);
     transform: scale(1.2);
 }
-.info b:hover{
-    background: rgb(98, 0, 255);
-    transform: scale(1.2);
-}
+
 .image{
     width: 70%;
     height: 50%;
@@ -278,13 +269,13 @@ ul li a:hover{
 .Experience {
     background: black;
     font-family: Arial, sans-serif;
-    height: 100%;
+    height: 100vh;
     padding: 2rem;
 }
 .experience-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
     width: 73%;
     background-color: white;
     height: 45%;
@@ -295,7 +286,7 @@ ul li a:hover{
     border: 4px solid aqua;
     border-radius: 1rem;
     box-shadow: 0 0 1rem aqua;
-    margin-bottom: 2rem;
+    margin-bottom: 0.4rem;
 }
 .section-title {
     text-align: center;
@@ -334,9 +325,9 @@ ul li a:hover{
 }
 /* contact data enter*/
 .contact {
-  padding: 60px 20px;
-  background: url(assets/back.pic.jpg);
-  font-family: Arial, sans-serif;
+    padding: 60px 20px;
+    background: url(assets/back.pic.jpg);
+    font-family: Arial, sans-serif;
 }
 .get{
     color: red;
@@ -385,19 +376,21 @@ ul li a:hover{
 .social-icons a {
     display: inline-block;
     margin-right: 10px;
-    background: red;
-    color: white;
     padding: 0.5rem;
     border-radius: 50%;
     font-size: 3rem;
-    transition:  0.3s ease;
     height: 3rem;
     width: 3rem;
     margin: 2%;
     box-shadow: 0 0 1rem aqua;
+    color:red;
+    transition: 0.4s ease-in-out ;
+    background: transparent;
 }
+
 .social-icons a:hover {
-    background: #322f9d;
+    color: rgb(38, 0, 255);
+    transform: scale(1.5);
 }
 .contact-form {
     flex: 1;
