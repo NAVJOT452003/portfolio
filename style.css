@@ -121,7 +121,7 @@ ul li a:hover{
       cursor:pointer;
       text-decoration:none;
       transition:0.3s ease;
-      margin-left: 4.2rem;
+      margin-left: 11.1rem;
       
 }
 .hire-btn:hover{
@@ -165,7 +165,8 @@ ul li a:hover{
     font-size: 3rem;
     transition: 0.4s ease-in-out ;
     background: transparent;
-    padding: 0.7%;
+    padding: 1.5%;
+    
 }
 .icons ion-icon:hover{
     color: rgb(38, 0, 255);
