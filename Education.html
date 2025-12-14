@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+    .timeline{
+    position: relative;
+    padding: 3rem;
+    height: 100%;
+    background: url(assets/back.pic.jpg);
+}
+.edu{
+    color: red;
+}
+.tion{
+    color: black;
+}
+.heading{
+    text-align: center;
+    font-size: 2.1rem;
+}
+.timeline-line{
+    position: relative;
+    width:0.4rem;
+    height: 5vh;
+    background-color: black;
+    margin: 0 auto;
+    
+}
+.head{
+    color: rgb(235, 6, 6);
+    text-align: center;
+}
+.timeline-container{
+    position: relative;
+    width: 40%;
+    padding: 2rem;
+}
+.timeline-container.left{
+    left: 50%;
+}
+.timeline-container.right{
+    right: -2%;
+}
+.timeline-container .content{
+    background-color: #000;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    box-shadow: 0 0 1rem aqua;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.timeline-container .content:hover{
+    transform: translateY(-0.8rem);
+}
+.para{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <section class="timeline" id="timeline">
+        <h2 class="heading"><span class="edu">Educ</span><span class="tion">ation</span></h2>
+        <div class="timeline-line"></div>
+        <div class="timeline-container left">
+            <!--Timeline iteams 1-->
+            <div class="content">
+                <h3 class="head">2018</h3>
+                <h3 class="head">10 th Secondary Annual Examination </h3>
+                <p class="para">Passed 10th from Bihar School Examination Board(BSEB), Patna</p>
+            </div>
+        </div>
+        <!--Timeline iteams 2-->
+        <div class="timeline-container right">
+            <div class="content">
+                <h3 class="head">2020</h3>
+                <h3 class="head">12 th Intermediate Annual Examination </h3>
+                <p class="para">Passed 12th from Bihar School Examination Board(BSEB), Patna</p>
+            </div>
+        </div>
+        <!--Timeline iteams 3-->
+        <div class="timeline-container left">
+            <div class="content">
+                <h3 class="head">2023</h3>
+                <h3 class="head"> Bachelor Of Computer Applications Examination(BCA) </h3>
+                <p class="para">Graduated in Computer Application from Babasaheb Bhimrao Ambedkar Bihar
+                    University(BRABU), Bihar.</p>
+            </div>
+        </div>
+        <!--Timeline iteams 4-->
+        <div class="timeline-container right">
+            <div class="content">
+                <h3 class="head">2025</h3>
+                <h3 class="head">Master of Computer Applications(MCA) </h3>
+                <p class="para">Pursuing Master's degree in Computer Applications from Dr. A.P.J. Abdul Kalam Technical
+                    University(AKTU), Greater Noida.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

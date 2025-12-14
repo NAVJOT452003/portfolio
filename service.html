@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <style>
+        .services {
+    padding: 2.5rem;
+    background: black;
+    text-align: center;
+    height: 100vh;
+    font-weight: bold;
+
+}
+.sec{
+    margin-top: 0.1rem;
+}
+.service-container {
+    display: flex;
+    gap: 3.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service-box {
+    background: white;
+    padding: 2.5rem;
+    width: 21rem;
+    border-radius:5rem;
+    box-shadow: 0 0 0.4rem rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 0.3rem solid cyan;
+    box-shadow: 0 0 1.2rem cyan;
+}
+.service-box:hover {
+    transform: translateY(-0.7rem);
+}
+.ser{
+    color: red;
+    font-size: 2.1rem;
+}
+.vic{
+    color: white;
+    font-size: 2.1rem;
+}
+.web{
+    color: red;
+}
+.dev{
+    color: darkblue;
+}
+.seo{
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <section class="services" id="services">
+        <div class="sec">
+            <h2><span class="ser">Serv</span><span class="vic">ices</span></h2><br>
+            <div class="service-container">
+                <div class="service-box">
+                    <h3><span class="web">Web Design</span></h3>
+                    <p>Modern and responsive web design using HTML, CSS, JS, and frameworks.</p>
+                </div>
+                <div class="service-box">
+                    <h3 class="dev">Web Development</h3>
+                    <p>Custom websites using modern technologies like React, Node.js, etc.</p>
+                </div>
+                <div class="service-box">
+                    <h3 class="seo">SEO Optimization</h3>
+                    <p>Improve your website's visibility on Google with SEO techniques.</p>
+                </div>
+            </div>
+     </section>
+</body>
+</html>
