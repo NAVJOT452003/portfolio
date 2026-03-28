@@ -4,87 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hire Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            background: url(assets/back.pic.jpg);
-        
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            text-align: center;
-            color: red;
-        }
-        .container span{
-            color: black;
-        }
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
-        button {
-            background: red;
-            color: black;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-        }
-
-        button:hover {
-            background: hsl(0, 96%, 46%);
-        }
-    </style>
+    <title>Hire Me - My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <h2>Hire <span>Me</span></h2>
-        <p style="text-align:center;">Fill the form below to get in touch with me.</p>
-        <form action="mailto:yourmail@example.com" method="post" enctype="text/plain">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo"><span class="nav">Nav</span><span class="jot">jot</span></a>
+        <button class="mobile-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Experience.html">Experience/Skills</a></li>
+        </ul>
+    </nav>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <!-- Hire Me Section -->
+    <section class="page-section">
+        <div class="hire-container animate-on-scroll">
+            <h2><span class="highlight-red">Hire </span><span class="highlight-black">Me</span></h2>
+            <p style="text-align:center; color: #555;">Fill the form below to get in touch with me.</p>
+            
+            <form onsubmit="sendEmail(event, 'hire')">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
-                required></textarea>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <button type="submit">Send Request</button>
-        </form>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+                <button type="submit">Send Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="success-modal">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <h3>Message Sent!</h3>
+        <p>Your message has been successfully sent to Navjot.</p>
+        <button class="close-modal-btn" onclick="closeModal()">Close</button>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

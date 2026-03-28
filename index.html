@@ -2,112 +2,163 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div  class="main" id="class">
-        <div class="navbar">
-            <a href="#" class="logo"><span class="nav">Nav</span><span class="jot">jot</span></a>
+    <div class="main" id="home">
+        <nav class="navbar">
+            <a href="index.html" class="logo"><span class="nav">Nav</span><span class="jot">jot</span></a>
+            <button class="mobile-menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
             <ul>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="Education.html">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Experience.html">Experience/Skills</a></li>
                 <li><a href="#contact">Contact Me</a></li>
                 <li><a href="assets/Resume.pdf" class="resume">Resume</a></li>
             </ul>
-        </div>
-        <div class="container1">
+        </nav>
+
+        <div class="container1 animate-on-scroll">
             <div class="info">
                 <h3>Hi<br> I'm <span class="navjot">Navjot</span></h3>
-                <h1><span>W</span>EB <span>D</span>ESIGNE<span>R</span></h1>
-                <h3>Web designer and devloper from Bihar, India.<br>
-                    I create website to do businesses do better<br> online.</h3>
+                <h1><span class="highlight-red">W</span>EB <span class="highlight-red">D</span>ESIGNE<span
+                        class="highlight-red">R</span></h1>
+                <h3>Web designer and developer from Bihar, India.<br>
+                    I create websites to help businesses perform better online.</h3>
+                <a href="Hire.html" class="hire-btn">Hire Me</a>
+                <div class="icons">
+                    <a href="https://www.facebook.com/share/1GQEpA9eED/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/_ranjan28?igsh=MTF5d3I1Z29mNDhucA=="><ion-icon
+                            name="logo-instagram"></ion-icon></a>
+                    <a href="https://x.com/35Navjot?t=DaVKZTHPcorwCG5tUPjbkg&s=09"><ion-icon
+                            name="logo-twitter"></ion-icon></a>
+                    <a
+                        href="https://www.linkedin.com/in/navjot-ranjan-a64893352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a href="https://wa.me/8252878984"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="https://github.com/NAVJOT452003"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
             </div>
-                    <a href="Hire.html" class="hire-btn">Hire Me</a>
             <div class="image">
-                <img src="assets/navjot.pic.jpg" class="boy">
+                <img src="assets/navjot.pic.jpg" alt="Navjot Profile" class="boy">
             </div>
-            <div class="icons">
-                <a href="https://www.facebook.com/share/1GQEpA9eED/"><ion-icon name="logo-facebook"></ico-icon></a>
-                <a href="https://www.instagram.com/_ranjan28?igsh=MTF5d3I1Z29mNDhucA=="><ion-icon name="logo-instagram"></ico-icon></a>
-                <a href="https://x.com/35Navjot?t=DaVKZTHPcorwCG5tUPjbkg&s=09"><ion-icon name="logo-twitter"></ico-icon></a>
-                <a href="https://www.linkedin.com/in/navjot-ranjan-a64893352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon name="logo-linkedin"></ico-icon></a>
-                <a href="https://wa.me/8252878984"><ion-icon name="logo-whatsapp"></ico-icon></a>
-                <a href="https://github.com/NAVJOT452003"><ion-icon name="logo-github"></ico-icon></a>
-            </div>
-            <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         </div>
     </div>
-    <!--project data inter-->
-     <section id="projects" class="projects">
-        <h2 class="pro"><span class="my">My </span><span class="proj">Pro</span><span class="ject">jects</span></h2>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title animate-on-scroll"><span class="highlight-red">My </span><span
+                class="highlight-black">Pro</span><span class="highlight-red">jects</span></h2>
 
         <div class="projects-container">
-
             <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Project 1: SACRED TEMPLE TRAVELS </h3>
-                <p>Built a responsive website to showcase
-                famous temples across India using *HTML, CSS, and JavaScript*. It
-                features temple history, events, festivals, and trip booking options. I integrated interactive elements, such as filters,
-                galleries, and contact forms, to enhance user engagement.</p>
-                <a class="btn" href="https://mini-project-chi-olive.vercel.app/" target="_blank">View Project</a>
+            <div class="project-card animate-on-scroll">
+                <h3>SACRED TEMPLE TRAVELS</h3>
+                <p>Built a responsive website showcasing famous Indian temples. It features an HD gallery, history
+                    exhibits, mantra meditation, trip bookings, and a store, while backend development is ongoing.</p>
+                <a class="btn" href="https://mini-project-chi-olive.vercel.app" target="_blank">View Project</a>
             </div>
 
             <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Project 2: Personal Portfolio Website</h3>
-                <p>Created an interactive portfolio with **HTML, CSS ** to display projects and abilities in an interactive
-design.</p>
-                <a class="btn" href="https://navjot-ranjan-portfolio.vercel.app/" target="_blank">View Project</a>
+            <div class="project-card animate-on-scroll">
+                <h3>Streaming Hub</h3>
+                <p>A modern, fully responsive platform that aggregates major OTT streaming websites. It features
+                    categorized site listings, an interactive movie suggestion tool, and premium 3D tilt and scroll
+                    animations for an engaging user experience.</p>
+                <a class="btn" href="https://navjot-stream.vercel.app" target="_blank">View Project</a>
             </div>
 
+            <!-- Project 3 -->
+            <div class="project-card animate-on-scroll">
+                <h3>3D Portfolio</h3>
+                <p>A modern and interactive 3D personal portfolio website built with React and Three.js to showcase my
+                    latest web development skills.</p>
+                <a class="btn" href="https://3d-portfolio-liart-mu.vercel.app" target="_blank">View Project</a>
+            </div>
         </div>
     </section>
-    <!-- contact data inter-->
+
+    <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="section-title"><span class="get">Get </span><span class="in">In</span><span class="get">Touch</span>
-        </h2>
+        <h2 class="section-title animate-on-scroll"><span class="highlight-red">Get </span><span
+                class="highlight-black">In </span><span class="highlight-red">Touch</span></h2>
+
         <div class="contact-container">
             <!-- Left Side -->
-            <div class="contact-info">
+            <div class="contact-info animate-on-scroll">
                 <h3>Let's work together</h3>
                 <p>I'm always interested in new opportunities and exciting projects.</p>
-
-                <ul>
-                    <li>navjotr220@gmail.com</li>
-                    <li>+91 8252878984</li>
-                    <li> Bihar, India</li>
-                </ul>
+                <div class="contact-details-box">
+                    <a href="tel:+918252878984" class="contact-item">
+                        <div class="contact-icon"><ion-icon name="call"></ion-icon></div>
+                        <div class="contact-text">
+                            <h4>Phone Number</h4>
+                            <p>+91 8252878984</p>
+                        </div>
+                    </a>
+                    <a href="mailto:navjotr220@gmail.com" class="contact-item">
+                        <div class="contact-icon"><ion-icon name="mail-open"></ion-icon></div>
+                        <div class="contact-text">
+                            <h4>Email Address</h4>
+                            <p>navjotr220@gmail.com</p>
+                        </div>
+                    </a>
+                    <div class="contact-item">
+                        <div class="contact-icon"><ion-icon name="location"></ion-icon></div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Noida, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="social-icons">
-                    <a href="https://github.com/NAVJOT452003"><ion-icon name="logo-github"></ico-icon></a>
-                    <a href="https://www.linkedin.com/in/navjot-ranjan-a64893352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon name="logo-linkedin"></ico-icon></a>
-                    <a href="https://x.com/35Navjot?t=DaVKZTHPcorwCG5tUPjbkg&s=09"><ion-icon name="logo-twitter"></ico-icon></a>
-                    <a href="https://wa.me/8252878984"><ion-icon name="logo-whatsapp"></ico-icon></a>
-
+                    <a href="https://github.com/NAVJOT452003"><ion-icon name="logo-github"></ion-icon></a>
+                    <a
+                        href="https://www.linkedin.com/in/navjot-ranjan-a64893352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a href="https://x.com/35Navjot?t=DaVKZTHPcorwCG5tUPjbkg&s=09"><ion-icon
+                            name="logo-twitter"></ion-icon></a>
+                    <a href="https://wa.me/8252878984"><ion-icon name="logo-whatsapp"></ion-icon></a>
                 </div>
             </div>
 
             <!-- Right Side (Form) -->
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Subject" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+            <form class="contact-form animate-on-scroll" onsubmit="sendEmail(event, 'contact')">
+                <input type="text" id="contact-name" placeholder="Your Name" required>
+                <input type="email" id="contact-email" placeholder="Your Email" required>
+                <input type="text" id="contact-subject" placeholder="Subject" required>
+                <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
+
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Navjot. All rights reserved.</p>
+            <p>&copy; 2026 Navjot. All rights reserved.</p>
             <p>Designed by Navjot</p>
         </div>
     </footer>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="success-modal">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <h3>Message Sent!</h3>
+        <p>Your message has been successfully sent to Navjot.</p>
+        <button class="close-modal-btn" onclick="closeModal()">Close</button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

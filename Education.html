@@ -1,104 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
-    <style>
-    .timeline{
-    position: relative;
-    padding: 3rem;
-    height: 100%;
-    background: url(assets/back.pic.jpg);
-}
-.edu{
-    color: red;
-}
-.tion{
-    color: black;
-}
-.heading{
-    text-align: center;
-    font-size: 2.1rem;
-}
-.timeline-line{
-    position: relative;
-    width:0.4rem;
-    height: 5vh;
-    background-color: black;
-    margin: 0 auto;
-    
-}
-.head{
-    color: rgb(235, 6, 6);
-    text-align: center;
-}
-.timeline-container{
-    position: relative;
-    width: 40%;
-    padding: 2rem;
-}
-.timeline-container.left{
-    left: 50%;
-}
-.timeline-container.right{
-    right: -2%;
-}
-.timeline-container .content{
-    background-color: #000;
-    border: 2px solid white;
-    border-radius: 1rem;
-    padding: 1.3rem;
-    box-shadow: 0 0 1rem aqua;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-.timeline-container .content:hover{
-    transform: translateY(-0.8rem);
-}
-.para{
-    color: white;
-}
-    </style>
+    <title>Education - My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <section class="timeline" id="timeline">
-        <h2 class="heading"><span class="edu">Educ</span><span class="tion">ation</span></h2>
-        <div class="timeline-line"></div>
-        <div class="timeline-container left">
-            <!--Timeline iteams 1-->
-            <div class="content">
-                <h3 class="head">2018</h3>
-                <h3 class="head">10 th Secondary Annual Examination </h3>
-                <p class="para">Passed 10th from Bihar School Examination Board(BSEB), Patna</p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo"><span class="nav">Nav</span><span class="jot">jot</span></a>
+        <button class="mobile-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Experience.html">Experience/Skills</a></li>
+        </ul>
+    </nav>
+
+    <!-- Education Timeline Section -->
+    <section class="page-section" id="timeline">
+        <h2 class="section-title animate-on-scroll"><span class="highlight-red">Educ</span><span class="highlight-black">ation</span></h2>
+        
+        <div class="timeline-wrap">
+            <div class="timeline-line"></div>
+            
+            <!-- Timeline item 1 -->
+            <div class="timeline-item left animate-on-scroll">
+                <div class="timeline-content">
+                    <h3>2018</h3>
+                    <h3>10th Secondary Annual Examination</h3>
+                    <p>Passed 10th from Bihar School Examination Board (BSEB), Patna.</p>
+                </div>
             </div>
-        </div>
-        <!--Timeline iteams 2-->
-        <div class="timeline-container right">
-            <div class="content">
-                <h3 class="head">2020</h3>
-                <h3 class="head">12 th Intermediate Annual Examination </h3>
-                <p class="para">Passed 12th from Bihar School Examination Board(BSEB), Patna</p>
+            
+            <!-- Timeline item 2 -->
+            <div class="timeline-item right animate-on-scroll">
+                <div class="timeline-content">
+                    <h3>2020</h3>
+                    <h3>12th Intermediate Annual Examination</h3>
+                    <p>Passed 12th from Bihar School Examination Board (BSEB), Patna.</p>
+                </div>
             </div>
-        </div>
-        <!--Timeline iteams 3-->
-        <div class="timeline-container left">
-            <div class="content">
-                <h3 class="head">2023</h3>
-                <h3 class="head"> Bachelor Of Computer Applications Examination(BCA) </h3>
-                <p class="para">Graduated in Computer Application from Babasaheb Bhimrao Ambedkar Bihar
-                    University(BRABU), Bihar.</p>
+            
+            <!-- Timeline item 3 -->
+            <div class="timeline-item left animate-on-scroll">
+                <div class="timeline-content">
+                    <h3>2023</h3>
+                    <h3>Bachelor Of Computer Applications (BCA)</h3>
+                    <p>Graduated in Computer Application from Babasaheb Bhimrao Ambedkar Bihar University (BRABU), Bihar.</p>
+                </div>
             </div>
-        </div>
-        <!--Timeline iteams 4-->
-        <div class="timeline-container right">
-            <div class="content">
-                <h3 class="head">2025</h3>
-                <h3 class="head">Master of Computer Applications(MCA) </h3>
-                <p class="para">Pursuing Master's degree in Computer Applications from Dr. A.P.J. Abdul Kalam Technical
-                    University(AKTU), Greater Noida.</p>
+            
+            <!-- Timeline item 4 -->
+            <div class="timeline-item right animate-on-scroll">
+                <div class="timeline-content">
+                    <h3>2025</h3>
+                    <h3>Master of Computer Applications (MCA)</h3>
+                    <p>Pursuing Master's degree in Computer Applications from Dr. A.P.J. Abdul Kalam Technical University (AKTU), Greater Noida.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
