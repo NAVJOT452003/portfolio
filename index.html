@@ -4,114 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Navjot | Personal Portfolio</title>
+    
+    <meta name="description" content="Explore the creative web designs and custom full-stack web applications developed by Navjot.">
+    <meta name="author" content="Navjot">
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="main" id="home">
-        <nav class="navbar">
-            <a href="index.html" class="logo"><span class="nav">Nav</span><span class="jot">jot</span></a>
-            <button class="mobile-menu-btn">
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
-            <ul>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="Experience.html">Experience/Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="assets/Resume.pdf" class="resume">Resume</a></li>
-            </ul>
-        </nav>
+    <!-- Interactive Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
 
+    <!-- Navigation Header -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="logo" id="nav-logo" aria-label="Navjot Home">
+            <span class="nav">Nav</span><span class="jot">jot</span>
+        </a>
+        <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle mobile menu">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Experience.html">Experience/Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="assets/Resume.pdf" class="resume" target="_blank" rel="noopener noreferrer">Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="main" id="home">
         <div class="container1 animate-on-scroll">
             <div class="info">
                 <h3>Hi<br> I'm <span class="navjot">Navjot</span></h3>
-                <h1><span class="highlight-red">W</span>EB <span class="highlight-red">D</span>ESIGNE<span
-                        class="highlight-red">R</span></h1>
-                <h3>Web designer and developer from Bihar, India.<br>
-                    I create websites to help businesses perform better online.</h3>
+                <h1><span class="highlight-red">W</span>EB <span class="highlight-red">D</span>ESIGNE<span class="highlight-red">R</span></h1>
+                <h3 class="desc">Web designer and developer from Bihar, India.<br>I create websites to help businesses perform better online.</h3>
                 <a href="Hire.html" class="hire-btn">Hire Me</a>
-                <div class="icons">
-                    <a href="https://www.facebook.com/share/1GQEpA9eED/"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="https://www.instagram.com/_ranjan28?igsh=MTF5d3I1Z29mNDhucA=="><ion-icon
-                            name="logo-instagram"></ion-icon></a>
-                    <a href="https://x.com/35Navjot?t=DaVKZTHPcorwCG5tUPjbkg&s=09"><ion-icon
-                            name="logo-twitter"></ion-icon></a>
-                    <a
-                        href="https://www.linkedin.com/in/navjot-ranjan-a64893352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon
-                            name="logo-linkedin"></ion-icon></a>
-                    <a href="https://wa.me/8252878984"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                    <a href="https://github.com/NAVJOT452003"><ion-icon name="logo-github"></ion-icon></a>
+                
+                <div class="icons" aria-label="Social Media Profiles">
+                    <a href="https://www.facebook.com/share/1GQEpA9eED/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/_ranjan28?igsh=MTF5d3I1Z29mNDhucA==" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://x.com/35Navjot?t=DaVKZTHPcorwCG5tUPjbkg&s=09" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/navjot-ranjan-a64893352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://wa.me/8252878984" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="https://github.com/NAVJOT452003" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
                 </div>
             </div>
             <div class="image">
-                <img src="assets/navjot.pic.jpg" alt="Navjot Profile" class="boy">
+                <div class="image-glow-wrapper">
+                    <img src="assets/navjot.pic.jpg" alt="Navjot Profile" class="boy">
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2 class="section-title animate-on-scroll"><span class="highlight-red">My </span><span
-                class="highlight-black">Pro</span><span class="highlight-red">jects</span></h2>
+        <h2 class="section-title animate-on-scroll">
+            <span class="highlight-red">My </span><span class="highlight-black">Pro</span><span class="highlight-red">jects</span>
+        </h2>
 
         <div class="projects-container">
-            <!-- Project 1 -->
+            <!-- Project 1: Sacred Temple Travels -->
             <div class="project-card animate-on-scroll">
+                <div class="project-tech-tags">
+                    <span class="project-tech-tag">HTML5</span>
+                    <span class="project-tech-tag">CSS3</span>
+                    <span class="project-tech-tag">JS</span>
+                </div>
                 <h3>SACRED TEMPLE TRAVELS</h3>
-                <p>Built a responsive website showcasing famous Indian temples. It features an HD gallery, history
-                    exhibits, mantra meditation, trip bookings, and a store, while backend development is ongoing.</p>
-                <a class="btn" href="https://mini-project-chi-olive.vercel.app" target="_blank">View Project</a>
+                <p>Built a responsive website showcasing famous Indian temples. It features an HD gallery, history exhibits, mantra meditation, trip bookings, and a store, while backend development is ongoing.</p>
+                <a class="btn" href="https://mini-project-chi-olive.vercel.app" target="_blank">View Project <ion-icon name="arrow-forward-outline"></ion-icon></a>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 2: Streaming Hub -->
             <div class="project-card animate-on-scroll">
+                <div class="project-tech-tags">
+                    <span class="project-tech-tag">JavaScript</span>
+                    <span class="project-tech-tag">OTT APIs</span>
+                    <span class="project-tech-tag">3D Animations</span>
+                </div>
                 <h3>Streaming Hub</h3>
-                <p>A modern, fully responsive platform that aggregates major OTT streaming websites. It features
-                    categorized site listings, an interactive movie suggestion tool, and premium 3D tilt and scroll
-                    animations for an engaging user experience.</p>
-                <a class="btn" href="https://navjot-stream.vercel.app" target="_blank">View Project</a>
+                <p>A modern, fully responsive platform that aggregates major OTT streaming websites. It features categorized site listings, an interactive movie suggestion tool, and premium 3D tilt and scroll animations for an engaging user experience.</p>
+                <a class="btn" href="https://navjot-stream.vercel.app" target="_blank">View Project <ion-icon name="arrow-forward-outline"></ion-icon></a>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 3: 3D Portfolio -->
             <div class="project-card animate-on-scroll">
+                <div class="project-tech-tags">
+                    <span class="project-tech-tag">React</span>
+                    <span class="project-tech-tag">Three.js</span>
+                    <span class="project-tech-tag">Tailwind</span>
+                </div>
                 <h3>3D Portfolio</h3>
-                <p>A modern and interactive 3D personal portfolio website built with React and Three.js to showcase my
-                    latest web development skills.</p>
-                <a class="btn" href="https://3d-portfolio-liart-mu.vercel.app" target="_blank">View Project</a>
+                <p>A modern and interactive 3D personal portfolio website built with React and Three.js to showcase my latest web development skills.</p>
+                <a class="btn" href="https://3d-portfolio-liart-mu.vercel.app" target="_blank">View Project <ion-icon name="arrow-forward-outline"></ion-icon></a>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="section-title animate-on-scroll"><span class="highlight-red">Get </span><span
-                class="highlight-black">In </span><span class="highlight-red">Touch</span></h2>
+        <h2 class="section-title animate-on-scroll">
+            <span class="highlight-red">Get </span><span class="highlight-black">In </span><span class="highlight-red">Touch</span>
+        </h2>
 
         <div class="contact-container">
             <!-- Left Side -->
             <div class="contact-info animate-on-scroll">
                 <h3>Let's work together</h3>
                 <p>I'm always interested in new opportunities and exciting projects.</p>
+                
                 <div class="contact-details-box">
-                    <a href="tel:+918252878984" class="contact-item">
-                        <div class="contact-icon"><ion-icon name="call"></ion-icon></div>
+                    <a href="tel:+918252878984" class="contact-item" aria-label="Call Navjot">
+                        <div class="contact-icon"><ion-icon name="call-outline"></ion-icon></div>
                         <div class="contact-text">
                             <h4>Phone Number</h4>
                             <p>+91 8252878984</p>
                         </div>
                     </a>
-                    <a href="mailto:navjotr220@gmail.com" class="contact-item">
-                        <div class="contact-icon"><ion-icon name="mail-open"></ion-icon></div>
+                    <a href="mailto:navjotr220@gmail.com" class="contact-item" aria-label="Email Navjot">
+                        <div class="contact-icon"><ion-icon name="mail-open-outline"></ion-icon></div>
                         <div class="contact-text">
                             <h4>Email Address</h4>
                             <p>navjotr220@gmail.com</p>
                         </div>
                     </a>
                     <div class="contact-item">
-                        <div class="contact-icon"><ion-icon name="location"></ion-icon></div>
+                        <div class="contact-icon"><ion-icon name="location-outline"></ion-icon></div>
                         <div class="contact-text">
                             <h4>Location</h4>
                             <p>Noida, Uttar Pradesh, India</p>
@@ -119,28 +142,26 @@
                     </div>
                 </div>
 
-                <div class="social-icons">
-                    <a href="https://github.com/NAVJOT452003"><ion-icon name="logo-github"></ion-icon></a>
-                    <a
-                        href="https://www.linkedin.com/in/navjot-ranjan-a64893352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><ion-icon
-                            name="logo-linkedin"></ion-icon></a>
-                    <a href="https://x.com/35Navjot?t=DaVKZTHPcorwCG5tUPjbkg&s=09"><ion-icon
-                            name="logo-twitter"></ion-icon></a>
-                    <a href="https://wa.me/8252878984"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <div class="social-icons" aria-label="Social Links">
+                    <a href="https://github.com/NAVJOT452003" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/navjot-ranjan-a64893352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://x.com/35Navjot?t=DaVKZTHPcorwCG5tUPjbkg&s=09" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://wa.me/8252878984" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-whatsapp"></ion-icon></a>
                 </div>
             </div>
 
             <!-- Right Side (Form) -->
             <form class="contact-form animate-on-scroll" onsubmit="sendEmail(event, 'contact')">
-                <input type="text" id="contact-name" placeholder="Your Name" required>
-                <input type="email" id="contact-email" placeholder="Your Email" required>
-                <input type="text" id="contact-subject" placeholder="Subject" required>
-                <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="text" id="contact-name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" id="contact-email" placeholder="Your Email" required aria-label="Your Email">
+                <input type="text" id="contact-subject" placeholder="Subject" required aria-label="Subject">
+                <textarea id="contact-message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2026 Navjot. All rights reserved.</p>
@@ -149,10 +170,10 @@
     </footer>
 
     <!-- Success Modal -->
-    <div class="success-modal" id="success-modal">
+    <div class="success-modal" id="success-modal" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-desc" aria-hidden="true">
         <ion-icon name="checkmark-circle-outline"></ion-icon>
-        <h3>Message Sent!</h3>
-        <p>Your message has been successfully sent to Navjot.</p>
+        <h3 id="modal-title">Message Sent!</h3>
+        <p id="modal-desc">Your message has been successfully sent to Navjot.</p>
         <button class="close-modal-btn" onclick="closeModal()">Close</button>
     </div>
 

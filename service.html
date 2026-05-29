@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - My Portfolio</title>
+    <title>Services | Navjot Ranjan Portfolio</title>
+    
+    <meta name="description" content="Custom web design, full-stack web development, and SEO optimization services offered by Navjot Ranjan.">
+    <meta name="author" content="Navjot Ranjan">
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="index.html" class="logo"><span class="nav">Nav</span><span class="jot">jot</span></a>
-        <button class="mobile-menu-btn">
+    <!-- Interactive Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="logo" id="nav-logo" aria-label="Navjot Ranjan Home">
+            <span class="nav">Nav</span><span class="jot">jot</span>
+        </a>
+        <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle mobile menu">
             <ion-icon name="menu-outline"></ion-icon>
         </button>
         <ul>
@@ -20,30 +29,49 @@
             <li><a href="service.html">Services</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Experience.html">Experience/Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+            <li><a href="assets/Resume.pdf" class="resume" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
     </nav>
 
     <!-- Services Section -->
     <section class="page-section" id="services">
-        <h2 class="section-title animate-on-scroll"><span class="highlight-red">Serv</span><span class="highlight-black">ices</span></h2>
+        <h2 class="section-title animate-on-scroll">
+            <span class="highlight-red">My</span> <span class="highlight-black">Services</span>
+        </h2>
         
         <div class="service-wrap">
+            <!-- Service 1: Web Design -->
             <div class="service-box animate-on-scroll">
-                <h3><span class="web">Web Design</span></h3>
-                <p>Modern and responsive web design using HTML, CSS, JS, and frameworks.</p>
+                <div class="service-icon"><ion-icon name="color-palette-outline"></ion-icon></div>
+                <h3>Web Design</h3>
+                <p>Creating beautiful, intuitive user interfaces with strong focus on user experience. Fully responsive layouts designed to captivate visitors and optimize conversions across all desktop, tablet, and mobile devices.</p>
             </div>
             
+            <!-- Service 2: Web Development -->
             <div class="service-box animate-on-scroll">
-                <h3 class="dev">Web Development</h3>
-                <p>Custom websites using modern technologies like React, Node.js, Express.js, etc.</p>
+                <div class="service-icon"><ion-icon name="code-slash-outline"></ion-icon></div>
+                <h3>Web Development</h3>
+                <p>Building high-performance, secure web applications using modern full-stack technologies like React, Node.js, Express, and Python frameworks. Implementing clean, modular, and maintainable codebase architectures.</p>
             </div>
             
+            <!-- Service 3: SEO Optimization -->
             <div class="service-box animate-on-scroll">
-                <h3 class="seo">SEO Optimization</h3>
-                <p>Improve your website's visibility on Google with SEO techniques.</p>
+                <div class="service-icon"><ion-icon name="search-outline"></ion-icon></div>
+                <h3>SEO Optimization</h3>
+                <p>Applying advanced search engine optimization strategies to improve site visibility, crawl structures, load speeds, and organic rankings on Google. Enforcing accessibility tags, rich snippet schemas, and optimal semantic markups.</p>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Navjot Ranjan. All rights reserved.</p>
+            <p>Designed and Built by Navjot Ranjan</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

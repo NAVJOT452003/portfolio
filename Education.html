@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education - My Portfolio</title>
+    <title>Education | Navjot Ranjan Portfolio</title>
+    
+    <meta name="description" content="Academic history and qualifications of Navjot Ranjan, pursuing Master of Computer Applications (MCA) and graduated in BCA.">
+    <meta name="author" content="Navjot Ranjan">
+    
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="index.html" class="logo"><span class="nav">Nav</span><span class="jot">jot</span></a>
-        <button class="mobile-menu-btn">
+    <!-- Interactive Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="logo" id="nav-logo" aria-label="Navjot Ranjan Home">
+            <span class="nav">Nav</span><span class="jot">jot</span>
+        </a>
+        <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle mobile menu">
             <ion-icon name="menu-outline"></ion-icon>
         </button>
         <ul>
@@ -20,53 +29,66 @@
             <li><a href="service.html">Services</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Experience.html">Experience/Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+            <li><a href="assets/Resume.pdf" class="resume" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
     </nav>
 
     <!-- Education Timeline Section -->
     <section class="page-section" id="timeline">
-        <h2 class="section-title animate-on-scroll"><span class="highlight-red">Educ</span><span class="highlight-black">ation</span></h2>
+        <h2 class="section-title animate-on-scroll">
+            <span class="highlight-red">Educ</span><span class="highlight-black">ation</span>
+        </h2>
         
         <div class="timeline-wrap">
             <div class="timeline-line"></div>
             
-            <!-- Timeline item 1 -->
+            <!-- Timeline item 1: 10th -->
             <div class="timeline-item left animate-on-scroll">
                 <div class="timeline-content">
-                    <h3>2018</h3>
-                    <h3>10th Secondary Annual Examination</h3>
-                    <p>Passed 10th from Bihar School Examination Board (BSEB), Patna.</p>
+                    <h3 class="year">2018</h3>
+                    <h3 class="title">10th Secondary Examination</h3>
+                    <p>Passed 10th grade from Bihar School Examination Board (BSEB), Patna, building strong analytical skills.</p>
                 </div>
             </div>
             
-            <!-- Timeline item 2 -->
+            <!-- Timeline item 2: 12th -->
             <div class="timeline-item right animate-on-scroll">
                 <div class="timeline-content">
-                    <h3>2020</h3>
-                    <h3>12th Intermediate Annual Examination</h3>
-                    <p>Passed 12th from Bihar School Examination Board (BSEB), Patna.</p>
+                    <h3 class="year">2020</h3>
+                    <h3 class="title">12th Intermediate Examination</h3>
+                    <p>Completed 12th grade in Science stream under Bihar School Examination Board (BSEB), Patna.</p>
                 </div>
             </div>
             
-            <!-- Timeline item 3 -->
+            <!-- Timeline item 3: BCA -->
             <div class="timeline-item left animate-on-scroll">
                 <div class="timeline-content">
-                    <h3>2023</h3>
-                    <h3>Bachelor Of Computer Applications (BCA)</h3>
-                    <p>Graduated in Computer Application from Babasaheb Bhimrao Ambedkar Bihar University (BRABU), Bihar.</p>
+                    <h3 class="year">2020 - 2023</h3>
+                    <h3 class="title">Bachelor of Computer Applications (BCA)</h3>
+                    <p>Graduated from Babasaheb Bhimrao Ambedkar Bihar University (BRABU), Bihar, studying computer systems, algorithms, database operations, and software methodologies.</p>
                 </div>
             </div>
             
-            <!-- Timeline item 4 -->
+            <!-- Timeline item 4: MCA -->
             <div class="timeline-item right animate-on-scroll">
                 <div class="timeline-content">
-                    <h3>2025</h3>
-                    <h3>Master of Computer Applications (MCA)</h3>
-                    <p>Pursuing Master's degree in Computer Applications from Dr. A.P.J. Abdul Kalam Technical University (AKTU), Greater Noida.</p>
+                    <h3 class="year">2024 - 2026</h3>
+                    <h3 class="title">Master of Computer Applications (MCA)</h3>
+                    <p>Currently pursuing a Master's degree in Computer Applications at Dr. A.P.J. Abdul Kalam Technical University (AKTU), Greater Noida, focusing on advanced software design, web architectures, and algorithms.</p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Navjot Ranjan. All rights reserved.</p>
+            <p>Designed and Built by Navjot Ranjan</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

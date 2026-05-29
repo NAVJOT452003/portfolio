@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Experience & Skills | Navjot Ranjan Portfolio</title>
+    
+    <meta name="description" content="Professional web development experience, academic qualifications, and technical skills of Navjot Ranjan.">
+    <meta name="author" content="Navjot Ranjan">
+    
+    <link rel="stylesheet" href="style.css?v=3.0" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="index.html" class="logo"><span class="nav">Nav</span><span class="jot">jot</span></a>
-        <button class="mobile-menu-btn">
+    <!-- Interactive Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="logo" id="nav-logo" aria-label="Navjot Ranjan Home">
+            <span class="nav">Nav</span><span class="jot">jot</span>
+        </a>
+        <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle mobile menu">
             <ion-icon name="menu-outline"></ion-icon>
         </button>
         <ul>
@@ -20,33 +29,53 @@
             <li><a href="service.html">Services</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Experience.html">Experience/Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact Me</a></li>
+            <li><a href="assets/Resume.pdf" class="resume" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
     </nav>
 
-    <!-- Experience Section -->
+    <!-- Experience & Skills Section -->
     <section class="page-section" id="Experience">
-        <h2 class="section-title animate-on-scroll"><span class="highlight-red">Expe</span><span class="highlight-black">rience</span></h2>
+        <h2 class="section-title animate-on-scroll">
+            <span class="highlight-red">Expe</span><span class="highlight-black">rience</span>
+        </h2>
         
-        <div class="experience-container animate-on-scroll">
-            <h3>"I am currently pursuing a Master of Computer Applications (MCA) with a strong 
-                focus on building my skills in <span>[ software development, web technologies ]</span>, and
+        <div class="experience-container animate-on-scroll" style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <h3 style="font-size: 1.45rem; line-height: 1.8; color: var(--text-secondary); font-weight: 500; margin-bottom: 3.5rem;">
+                "I am currently pursuing a Master of Computer Applications (MCA) with a strong 
+                focus on building my skills in <span style="color: var(--primary-color); font-weight: 600;">[ software development, web technologies ]</span>, and
                 I am actively working on academic projects and personal learning initiatives to  
-                prepare for impactful contributions in the tech industry."</h3>
-            <!-- Skills Section Added -->
-            <div class="skills-wrapper">
-                <h4>My Skills</h4>
+                prepare for impactful contributions in the tech industry."
+            </h3>
+
+            <!-- Dynamic Skills Section with Bouncing Tags -->
+            <div class="skills-wrapper animate-on-scroll">
+                <h4 style="width: 100%; color: var(--primary-color); font-size: 1.8rem; margin-bottom: 2rem; font-family: var(--font-heading); font-weight: 700;">My Skills</h4>
+                
                 <div class="skill-tag">Python</div>
+                <div class="skill-tag">Java</div>
                 <div class="skill-tag">JavaScript</div>
-                <div class="skill-tag">HTML</div>
-                <div class="skill-tag">CSS</div>
+                <div class="skill-tag">HTML5</div>
+                <div class="skill-tag">CSS3</div>
                 <div class="skill-tag">Bootstrap</div>
                 <div class="skill-tag">Node.js</div>
                 <div class="skill-tag">Express.js</div>
                 <div class="skill-tag">React</div>
                 <div class="skill-tag">MongoDB</div>
+                <div class="skill-tag">SQL</div>
+                <div class="skill-tag">Terminal</div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Navjot Ranjan. All rights reserved.</p>
+            <p>Designed and Built by Navjot Ranjan</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
